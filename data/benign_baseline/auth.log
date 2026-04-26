@@ -1,0 +1,368 @@
+2026-04-26T14:22:42.404334-04:00 surya useradd[1752]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T14:22:42.411625-04:00 surya useradd[1753]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T14:22:44.460018-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-04-26T14:22:44.503652-04:00 surya systemd-logind[977]: New session c1 of user gdm.
+2026-04-26T14:22:44.660439-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-04-26T14:22:50.528936-04:00 surya polkitd[950]: Registered Authentication Agent for unix-session:c1 (system bus name :1.38 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T14:23:09.689498-04:00 surya gdm-password]: gkr-pam: unable to locate daemon control file
+2026-04-26T14:23:09.689979-04:00 surya gdm-password]: gkr-pam: stashed password to try later in open session
+2026-04-26T14:23:09.718182-04:00 surya gdm-password]: pam_unix(gdm-password:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T14:23:09.733361-04:00 surya systemd-logind[977]: New session 2 of user surya.
+2026-04-26T14:23:09.775946-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T14:23:10.178682-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-04-26T14:23:10.821305-04:00 surya gnome-keyring-daemon[3094]: The PKCS#11 component was already initialized
+2026-04-26T14:23:10.821674-04:00 surya gnome-keyring-daemon[3311]: discover_other_daemon: 1
+2026-04-26T14:23:10.825070-04:00 surya gnome-keyring-daemon[3094]: The Secret Service was already initialized
+2026-04-26T14:23:10.827696-04:00 surya gnome-keyring-daemon[3317]: discover_other_daemon: 1
+2026-04-26T14:23:10.853226-04:00 surya gnome-keyring-daemon[3319]: discover_other_daemon: 1
+2026-04-26T14:23:13.534864-04:00 surya polkitd[950]: Registered Authentication Agent for unix-session:2 (system bus name :1.75 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T14:23:14.572877-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-04-26T14:23:14.594305-04:00 surya systemd-logind[977]: Session c1 logged out. Waiting for processes to exit.
+2026-04-26T14:23:14.615914-04:00 surya polkitd[950]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.38, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-04-26T14:23:14.648263-04:00 surya systemd-logind[977]: Removed session c1.
+2026-04-26T14:23:25.427613-04:00 surya (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2026-04-26T14:24:17.996428-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:24:18.001893-04:00 surya pkexec[4287]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T14:24:45.269932-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/mkdir -p /root/.ssh/
+2026-04-26T14:24:45.271379-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:24:45.318692-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:25:01.666380-04:00 surya CRON[4307]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T14:25:01.698415-04:00 surya CRON[4307]: pam_unix(cron:session): session closed for user root
+2026-04-26T14:25:02.595685-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/touch /root/.ssh/authorized_keys
+2026-04-26T14:25:02.602278-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:25:02.618204-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:26:19.968142-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/chmod 600 /root/.ssh/authorized_keys
+2026-04-26T14:26:19.971261-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:26:19.977387-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:27:41.364268-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/ls -la /root/.ssh/authorized_keys /home/surya/.ssh/authorized_keys
+2026-04-26T14:27:41.372394-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:27:41.378547-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:29:46.684243-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/nano /etc/audit/rules.d/99-project-additions.rules
+2026-04-26T14:29:46.697434-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:30:01.773950-04:00 surya CRON[4357]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T14:30:01.785480-04:00 surya CRON[4357]: pam_unix(cron:session): session closed for user root
+2026-04-26T14:30:24.615269-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:30:35.620114-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/cat /etc/audit/rules.d/99-project-additions.rules
+2026-04-26T14:30:35.622120-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:30:35.625238-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:31:05.472804-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/augenrules --load
+2026-04-26T14:31:05.477232-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:31:05.576378-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:31:40.392351-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/systemctl restart auditd
+2026-04-26T14:31:40.394398-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:31:40.795134-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:31:55.488308-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/auditctl -l
+2026-04-26T14:31:55.490423-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:31:55.531956-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:32:28.118485-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/auditctl -l
+2026-04-26T14:32:28.121630-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:32:28.131954-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:33:21.678660-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+2026-04-26T14:33:21.708830-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:33:21.709472-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:34:22.223722-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/ausearch -k cred_read_shadow -ts recent
+2026-04-26T14:34:22.226917-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:34:22.298006-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:35:01.817823-04:00 surya CRON[4450]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T14:35:01.824305-04:00 surya CRON[4450]: pam_unix(cron:session): session closed for user root
+2026-04-26T14:37:06.114098-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/ausearch -k ssh_authkeys -ts recent
+2026-04-26T14:37:06.120413-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:37:06.154134-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:40:33.596193-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/touch /var/log/stage3_test.log
+2026-04-26T14:40:33.636562-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:40:33.642901-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:41:19.549574-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/truncate -s 0 /var/log/stage3_test.log
+2026-04-26T14:41:19.562146-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:41:19.589284-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:42:17.247897-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/ausearch -k log_tampering -ts recent
+2026-04-26T14:42:17.254096-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:42:17.295523-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:43:01.521094-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/rm /var/log/stage3_test.log
+2026-04-26T14:43:01.534524-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:43:01.547285-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:43:06.711905-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/ausearch -k log_tampering -ts recent
+2026-04-26T14:43:06.719200-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:43:06.743275-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:45:01.432980-04:00 surya CRON[4502]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T14:45:01.452894-04:00 surya CRON[4502]: pam_unix(cron:session): session closed for user root
+2026-04-26T14:45:22.650947-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+2026-04-26T14:45:22.687648-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:45:22.687825-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:45:25.120203-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/ausearch -f /etc/shadow
+2026-04-26T14:45:25.126912-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T14:45:25.189472-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T14:55:04.151840-04:00 surya CRON[4524]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T14:55:04.168895-04:00 surya CRON[4524]: pam_unix(cron:session): session closed for user root
+2026-04-26T15:01:16.638619-04:00 surya dbus-daemon[935]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2026-04-26T15:01:45.336482-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:01:45.363298-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:01:45.365745-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:01:45.365912-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:01:45.393546-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:01:45.395499-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:01:45.395542-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:01:45.395572-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:01:45.395649-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:01:45.420274-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:03:01.648461-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:03:01.650240-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:03:01.654661-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:03:01.655582-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:03:01.708763-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:03:01.710184-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:03:01.710334-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:03:01.710723-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:03:01.710853-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:03:01.769327-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:03:21.862613-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:03:21.876223-04:00 surya pkexec[12135]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T15:03:55.548625-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:03:55.549589-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:03:55.549723-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:03:55.554621-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:03:55.616019-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:03:55.616118-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:03:55.616174-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:03:55.616226-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:03:55.616277-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:03:55.635498-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:03:55.635641-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:03:55.635707-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:03:55.636107-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:03:55.636869-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:03:55.658284-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:03:55.658449-04:00 surya polkitd[950]: Reloading rules
+2026-04-26T15:03:55.658492-04:00 surya polkitd[950]: Collecting garbage unconditionally...
+2026-04-26T15:03:55.658530-04:00 surya polkitd[950]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:03:55.658920-04:00 surya polkitd[950]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:03:55.686143-04:00 surya polkitd[950]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:04:00.446818-04:00 surya polkitd[15571]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:04:00.447640-04:00 surya polkitd[15571]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:04:00.462177-04:00 surya polkitd[15571]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:04:00.475469-04:00 surya polkitd[15571]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-26T15:04:00.640365-04:00 surya polkitd[15571]: Registered Authentication Agent for unix-session:2 (system bus name :1.75 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:04:08.226647-04:00 surya polkitd[15571]: Reloading rules
+2026-04-26T15:04:08.234031-04:00 surya polkitd[15571]: Collecting garbage unconditionally...
+2026-04-26T15:04:08.247691-04:00 surya polkitd[15571]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:04:08.247839-04:00 surya polkitd[15571]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:04:08.298211-04:00 surya polkitd[15571]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:04:08.299263-04:00 surya polkitd[15571]: Reloading rules
+2026-04-26T15:04:08.299833-04:00 surya polkitd[15571]: Collecting garbage unconditionally...
+2026-04-26T15:04:08.300533-04:00 surya polkitd[15571]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:04:08.315941-04:00 surya polkitd[15571]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:04:08.382943-04:00 surya polkitd[15571]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:05:01.859705-04:00 surya CRON[16392]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T15:05:01.884775-04:00 surya CRON[16392]: pam_unix(cron:session): session closed for user root
+2026-04-26T15:06:21.214949-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:06:21.228007-04:00 surya pkexec[16436]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T15:07:36.684115-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-04-26T15:09:20.893122-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:09:20.900102-04:00 surya pkexec[27336]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T15:12:19.616012-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:12:19.631571-04:00 surya pkexec[33907]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T15:12:55.462891-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+2026-04-26T15:12:55.483608-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:12:55.550306-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T15:13:26.621924-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/apt install -y openssh-server
+2026-04-26T15:13:26.627051-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:13:27.330498-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T15:13:27.342452-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/systemctl enable --now ssh
+2026-04-26T15:13:27.345099-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:13:28.198767-04:00 surya sshd[34368]: Server listening on 0.0.0.0 port 22.
+2026-04-26T15:13:28.198933-04:00 surya sshd[34368]: Server listening on :: port 22.
+2026-04-26T15:13:28.203189-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T15:14:37.147552-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+2026-04-26T15:14:37.170588-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:14:37.201062-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T15:15:01.929433-04:00 surya CRON[34380]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T15:15:01.941696-04:00 surya CRON[34380]: pam_unix(cron:session): session closed for user root
+2026-04-26T15:17:01.995481-04:00 surya CRON[34384]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T15:17:02.018508-04:00 surya CRON[34384]: pam_unix(cron:session): session closed for user root
+2026-04-26T15:21:22.998025-04:00 surya systemd-logind[977]: The system will reboot now!
+2026-04-26T15:21:23.098348-04:00 surya systemd-logind[977]: System is rebooting.
+2026-04-26T15:21:23.195282-04:00 surya gdm-password]: pam_unix(gdm-password:session): session closed for user surya
+2026-04-26T15:15:46.304612-04:00 surya systemd-logind[958]: New seat seat0.
+2026-04-26T15:15:46.304618-04:00 surya systemd-logind[958]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-04-26T15:15:46.304624-04:00 surya systemd-logind[958]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-04-26T15:15:46.304637-04:00 surya systemd-logind[958]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-04-26T15:15:46.536096-04:00 surya polkitd[927]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:15:46.545841-04:00 surya polkitd[927]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:15:46.977523-04:00 surya polkitd[927]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:15:46.996006-04:00 surya polkitd[927]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-26T15:15:48.572349-04:00 surya sshd[1359]: Server listening on 0.0.0.0 port 22.
+2026-04-26T15:15:48.574393-04:00 surya sshd[1359]: Server listening on :: port 22.
+2026-04-26T15:15:56.897788-04:00 surya useradd[1626]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:15:56.901491-04:00 surya useradd[1627]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:15:58.761131-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-04-26T15:15:58.818101-04:00 surya systemd-logind[958]: New session c1 of user gdm.
+2026-04-26T15:15:58.875569-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-04-26T15:16:03.569712-04:00 surya polkitd[927]: Registered Authentication Agent for unix-session:c1 (system bus name :1.38 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:16:26.506197-04:00 surya gdm-password]: gkr-pam: unable to locate daemon control file
+2026-04-26T15:16:26.508512-04:00 surya gdm-password]: gkr-pam: stashed password to try later in open session
+2026-04-26T15:16:26.557580-04:00 surya gdm-password]: pam_unix(gdm-password:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T15:16:26.569704-04:00 surya systemd-logind[958]: New session 2 of user surya.
+2026-04-26T15:16:26.736316-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T15:16:27.141508-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-04-26T15:16:27.802986-04:00 surya gnome-keyring-daemon[2956]: The PKCS#11 component was already initialized
+2026-04-26T15:16:27.803735-04:00 surya gnome-keyring-daemon[3175]: discover_other_daemon: 1
+2026-04-26T15:16:27.804416-04:00 surya gnome-keyring-daemon[2956]: The Secret Service was already initialized
+2026-04-26T15:16:27.805353-04:00 surya gnome-keyring-daemon[3178]: discover_other_daemon: 1
+2026-04-26T15:16:28.118887-04:00 surya gnome-keyring-daemon[3182]: discover_other_daemon: 1
+2026-04-26T15:16:30.349907-04:00 surya polkitd[927]: Registered Authentication Agent for unix-session:2 (system bus name :1.75 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:16:31.398437-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-04-26T15:16:31.423298-04:00 surya systemd-logind[958]: Session c1 logged out. Waiting for processes to exit.
+2026-04-26T15:16:31.428714-04:00 surya polkitd[927]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.38, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-04-26T15:16:31.475869-04:00 surya systemd-logind[958]: Removed session c1.
+2026-04-26T15:16:41.678154-04:00 surya (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+                                                                                                                                                                                                                                      2026-04-26T15:24:10.376321-04:00 surya systemd-logind[948]: New seat seat0.
+2026-04-26T15:24:10.376327-04:00 surya systemd-logind[948]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-04-26T15:24:10.376339-04:00 surya systemd-logind[948]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-04-26T15:24:10.376343-04:00 surya systemd-logind[948]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-04-26T15:24:10.376482-04:00 surya polkitd[934]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:24:10.368885-04:00 surya polkitd[934]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:24:10.657192-04:00 surya polkitd[934]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:24:10.683234-04:00 surya polkitd[934]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-26T15:24:12.330607-04:00 surya sshd[1392]: Server listening on 0.0.0.0 port 22.
+2026-04-26T15:24:12.330702-04:00 surya sshd[1392]: Server listening on :: port 22.
+2026-04-26T15:24:21.581951-04:00 surya useradd[1623]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:24:21.585931-04:00 surya useradd[1624]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:24:23.242695-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-04-26T15:24:23.308314-04:00 surya systemd-logind[948]: New session c1 of user gdm.
+2026-04-26T15:24:23.344376-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-04-26T15:24:27.832315-04:00 surya polkitd[934]: Registered Authentication Agent for unix-session:c1 (system bus name :1.39 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:25:02.032998-04:00 surya CRON[2944]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T15:25:02.100963-04:00 surya CRON[2944]: pam_unix(cron:session): session closed for user root
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                2026-04-26T15:27:45.422942-04:00 surya systemd-logind[949]: New seat seat0.
+2026-04-26T15:27:45.422948-04:00 surya systemd-logind[949]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-04-26T15:27:45.422954-04:00 surya systemd-logind[949]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-04-26T15:27:45.422960-04:00 surya systemd-logind[949]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-04-26T15:27:45.569606-04:00 surya polkitd[919]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:27:45.574969-04:00 surya polkitd[919]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:27:45.826766-04:00 surya polkitd[919]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:27:45.836263-04:00 surya polkitd[919]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-26T15:27:47.326670-04:00 surya sshd[1313]: Server listening on 0.0.0.0 port 22.
+2026-04-26T15:27:47.327809-04:00 surya sshd[1313]: Server listening on :: port 22.
+2026-04-26T15:27:55.657381-04:00 surya useradd[1619]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:27:55.671108-04:00 surya useradd[1620]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:27:57.826894-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-04-26T15:27:57.877868-04:00 surya systemd-logind[949]: New session c1 of user gdm.
+2026-04-26T15:27:58.012527-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-04-26T15:28:02.821563-04:00 surya polkitd[919]: Registered Authentication Agent for unix-session:c1 (system bus name :1.40 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:28:12.752975-04:00 surya gdm-password]: gkr-pam: unable to locate daemon control file
+2026-04-26T15:28:12.753320-04:00 surya gdm-password]: gkr-pam: stashed password to try later in open session
+2026-04-26T15:28:12.790004-04:00 surya gdm-password]: pam_unix(gdm-password:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T15:28:12.821308-04:00 surya systemd-logind[949]: New session 2 of user surya.
+2026-04-26T15:28:12.861666-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T15:28:13.271564-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-04-26T15:28:13.972385-04:00 surya gnome-keyring-daemon[2976]: The PKCS#11 component was already initialized
+2026-04-26T15:28:13.973434-04:00 surya gnome-keyring-daemon[3190]: discover_other_daemon: 1
+2026-04-26T15:28:13.979824-04:00 surya gnome-keyring-daemon[2976]: The Secret Service was already initialized
+2026-04-26T15:28:13.980581-04:00 surya gnome-keyring-daemon[3194]: discover_other_daemon: 1
+2026-04-26T15:28:13.986701-04:00 surya gnome-keyring-daemon[3197]: discover_other_daemon: 1
+2026-04-26T15:28:16.408542-04:00 surya polkitd[919]: Registered Authentication Agent for unix-session:2 (system bus name :1.77 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:28:17.520381-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-04-26T15:28:17.531028-04:00 surya systemd-logind[949]: Session c1 logged out. Waiting for processes to exit.
+2026-04-26T15:28:17.536535-04:00 surya polkitd[919]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.40, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-04-26T15:28:17.538662-04:00 surya systemd-logind[949]: Removed session c1.
+2026-04-26T15:28:29.566232-04:00 surya (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2026-04-26T15:29:19.136405-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:29:19.138723-04:00 surya pkexec[4577]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T15:30:01.859818-04:00 surya CRON[4998]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T15:30:01.872899-04:00 surya CRON[4998]: pam_unix(cron:session): session closed for user root
+2026-04-26T15:35:01.924085-04:00 surya CRON[7575]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T15:35:01.943726-04:00 surya CRON[7575]: pam_unix(cron:session): session closed for user root
+2026-04-26T15:48:43.956339-04:00 surya systemd-logind[959]: New seat seat0.
+2026-04-26T15:48:43.956342-04:00 surya systemd-logind[959]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-04-26T15:48:43.956345-04:00 surya systemd-logind[959]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-04-26T15:48:43.956360-04:00 surya systemd-logind[959]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-04-26T15:48:44.201210-04:00 surya polkitd[944]: Loading rules from directory /etc/polkit-1/rules.d
+2026-04-26T15:48:44.217347-04:00 surya polkitd[944]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-04-26T15:48:44.712074-04:00 surya polkitd[944]: Finished loading, compiling and executing 16 rules
+2026-04-26T15:48:44.750966-04:00 surya polkitd[944]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-04-26T15:48:46.476786-04:00 surya sshd[1343]: Server listening on 0.0.0.0 port 22.
+2026-04-26T15:48:46.476975-04:00 surya sshd[1343]: Server listening on :: port 22.
+2026-04-26T15:48:55.545558-04:00 surya useradd[1631]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:48:55.551779-04:00 surya useradd[1632]: failed adding user 'vboxadd', exit code: 9
+2026-04-26T15:48:57.316063-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-04-26T15:48:57.375776-04:00 surya systemd-logind[959]: New session c1 of user gdm.
+2026-04-26T15:48:57.529488-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-04-26T15:49:02.719528-04:00 surya polkitd[944]: Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:49:21.068328-04:00 surya gdm-password]: gkr-pam: unable to locate daemon control file
+2026-04-26T15:49:21.068401-04:00 surya gdm-password]: gkr-pam: stashed password to try later in open session
+2026-04-26T15:49:21.099070-04:00 surya gdm-password]: pam_unix(gdm-password:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T15:49:21.122238-04:00 surya systemd-logind[959]: New session 2 of user surya.
+2026-04-26T15:49:21.176853-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T15:49:21.660690-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-04-26T15:49:22.351680-04:00 surya gnome-keyring-daemon[2988]: The PKCS#11 component was already initialized
+2026-04-26T15:49:22.352986-04:00 surya gnome-keyring-daemon[3181]: discover_other_daemon: 1
+2026-04-26T15:49:22.363743-04:00 surya gnome-keyring-daemon[2988]: The Secret Service was already initialized
+2026-04-26T15:49:22.365276-04:00 surya gnome-keyring-daemon[3188]: discover_other_daemon: 1
+2026-04-26T15:49:22.379485-04:00 surya gnome-keyring-daemon[3189]: discover_other_daemon: 1
+2026-04-26T15:49:24.844217-04:00 surya polkitd[944]: Registered Authentication Agent for unix-session:2 (system bus name :1.78 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-04-26T15:49:25.681223-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-04-26T15:49:25.735472-04:00 surya systemd-logind[959]: Session c1 logged out. Waiting for processes to exit.
+2026-04-26T15:49:25.773740-04:00 surya polkitd[944]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.41, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-04-26T15:49:25.787575-04:00 surya systemd-logind[959]: Removed session c1.
+2026-04-26T15:49:36.839637-04:00 surya (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2026-04-26T15:50:12.674858-04:00 surya sshd[4055]: Accepted password for surya from 10.0.2.2 port 7933 ssh2
+2026-04-26T15:50:12.690287-04:00 surya sshd[4055]: pam_unix(sshd:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T15:50:12.754923-04:00 surya systemd-logind[959]: New session 4 of user surya.
+2026-04-26T15:50:29.097215-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T15:50:29.101604-04:00 surya pkexec[4270]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T15:51:03.535358-04:00 surya sshd[4139]: Received disconnect from 10.0.2.2 port 7933:11: disconnected by user
+2026-04-26T15:51:03.536724-04:00 surya sshd[4139]: Disconnected from user surya 10.0.2.2 port 7933
+2026-04-26T15:51:03.537567-04:00 surya sshd[4055]: pam_unix(sshd:session): session closed for user surya
+2026-04-26T15:51:03.561361-04:00 surya systemd-logind[959]: Session 4 logged out. Waiting for processes to exit.
+2026-04-26T15:51:03.568441-04:00 surya systemd-logind[959]: Removed session 4.
+2026-04-26T15:55:01.281427-04:00 surya CRON[4424]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T15:55:01.299575-04:00 surya CRON[4424]: pam_unix(cron:session): session closed for user root
+2026-04-26T16:05:01.167108-04:00 surya CRON[4484]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T16:05:01.177223-04:00 surya CRON[4484]: pam_unix(cron:session): session closed for user root
+2026-04-26T16:08:19.303947-04:00 surya sudo: pam_unix(sudo:auth): authentication failure; logname=surya uid=1000 euid=0 tty=/dev/pts/0 ruser=surya rhost=  user=surya
+2026-04-26T16:08:30.144172-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/whoami
+2026-04-26T16:08:30.148085-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:08:30.151029-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T16:09:18.686674-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/ls /root
+2026-04-26T16:09:18.702634-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:09:18.724298-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T16:10:30.962717-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/cat /etc/hostname
+2026-04-26T16:10:30.975623-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:10:31.026914-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T16:10:55.751172-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/uptime
+2026-04-26T16:10:55.763042-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:10:55.782761-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T16:15:01.670902-04:00 surya CRON[4563]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T16:15:01.682693-04:00 surya CRON[4563]: pam_unix(cron:session): session closed for user root
+2026-04-26T16:15:32.118848-04:00 surya sudo:    surya : TTY=pts/1 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/apt update
+2026-04-26T16:15:32.124401-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:15:38.541584-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T16:15:48.454478-04:00 surya sudo:    surya : TTY=pts/1 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/apt install -y tree
+2026-04-26T16:15:48.459146-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:15:56.770890-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T16:17:01.731717-04:00 surya CRON[4979]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T16:17:01.753302-04:00 surya CRON[4979]: pam_unix(cron:session): session closed for user root
+2026-04-26T16:17:08.762667-04:00 surya sudo:    surya : TTY=pts/1 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/apt remove -y tree
+2026-04-26T16:17:08.775710-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:17:12.065690-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-04-26T16:17:33.758418-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-04-26T16:17:33.765250-04:00 surya pkexec[5087]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-04-26T16:24:02.320572-04:00 surya sshd[5121]: Accepted password for surya from 10.0.2.2 port 52670 ssh2
+2026-04-26T16:24:02.325275-04:00 surya sshd[5121]: pam_unix(sshd:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T16:24:02.339556-04:00 surya systemd-logind[959]: New session 9 of user surya.
+2026-04-26T16:24:32.384141-04:00 surya sshd[5162]: Received disconnect from 10.0.2.2 port 52670:11: disconnected by user
+2026-04-26T16:24:32.387453-04:00 surya sshd[5162]: Disconnected from user surya 10.0.2.2 port 52670
+2026-04-26T16:24:32.391102-04:00 surya sshd[5121]: pam_unix(sshd:session): session closed for user surya
+2026-04-26T16:24:32.431348-04:00 surya systemd-logind[959]: Session 9 logged out. Waiting for processes to exit.
+2026-04-26T16:24:32.436287-04:00 surya systemd-logind[959]: Removed session 9.
+2026-04-26T16:25:01.463969-04:00 surya CRON[5187]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-26T16:25:01.480535-04:00 surya CRON[5187]: pam_unix(cron:session): session closed for user root
+2026-04-26T16:25:41.659651-04:00 surya sshd[5192]: Accepted password for surya from 10.0.2.2 port 21654 ssh2
+2026-04-26T16:25:41.676589-04:00 surya sshd[5192]: pam_unix(sshd:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-04-26T16:25:41.698404-04:00 surya systemd-logind[959]: New session 11 of user surya.
+2026-04-26T16:27:02.742896-04:00 surya sshd[5233]: Received disconnect from 10.0.2.2 port 21654:11: disconnected by user
+2026-04-26T16:27:02.755773-04:00 surya sshd[5233]: Disconnected from user surya 10.0.2.2 port 21654
+2026-04-26T16:27:02.756614-04:00 surya sshd[5192]: pam_unix(sshd:session): session closed for user surya
+2026-04-26T16:27:02.762159-04:00 surya systemd-logind[959]: Session 11 logged out. Waiting for processes to exit.
+2026-04-26T16:27:02.780814-04:00 surya systemd-logind[959]: Removed session 11.
+2026-04-26T16:29:02.998651-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /var/log/auth.log.1 /var/log/auth.log.2.gz /var/log/auth.log.3.gz /var/log/auth.log.4.gz /home/surya/capture_benign/
+2026-04-26T16:29:03.002209-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
