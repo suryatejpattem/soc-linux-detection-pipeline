@@ -1,8 +1,8 @@
-\# Methodology
+# Methodology
 
 
 
-\## Attack Simulation: Atomic Red Team
+## Attack Simulation: Atomic Red Team
 
 
 
@@ -24,7 +24,7 @@ detection rules.
 
 
 
-\## Logging
+## Logging
 
 
 
@@ -62,33 +62,33 @@ capture of normal user activity. Reported metrics are precision
 
 
 
-\## Auditd Ruleset Adaptation
+## Auditd Ruleset Adaptation
 
 
 
-\### Starting Point
+### Starting Point
 
-\- Source: Neo23x0 community ruleset (github.com/Neo23x0/auditd)
+- Source: Neo23x0 community ruleset (github.com/Neo23x0/auditd)
 
-\- Rules commented out for Ubuntu 24.04 compatibility: 44
+- Rules commented out for Ubuntu 24.04 compatibility: 44
 
 &#x20; (RHEL/CentOS paths, optional services like Filebeat, OpenLDAP,
 
 &#x20; Kerberos, Docker, CrowdStrike, dnf/yum)
 
-\- Loaded rule count after Ubuntu adaptation: 163
+- Loaded rule count after Ubuntu adaptation: 163
 
 
 
-\### Project-Specific Additions
+### Project-Specific Additions
 
-\- File: /etc/audit/rules.d/99-project-additions.rules
+- File: /etc/audit/rules.d/99-project-additions.rules
 
-\- Rationale: project changes kept separate from upstream ruleset for
+- Rationale: project changes kept separate from upstream ruleset for
 
 &#x20; traceability and reversibility
 
-\- 3 coverage gaps identified by systematic audit against the 10 target
+- 3 coverage gaps identified by systematic audit against the 10 target
 
 &#x20; ATT\&CK techniques:
 
@@ -128,27 +128,27 @@ capture of normal user activity. Reported metrics are precision
 
 
 
-\- Final loaded rule count: 169 (163 + 6 additions)
+- Final loaded rule count: 169 (163 + 6 additions)
 
 
 
-\### Verification
+### Verification
 
 All 6 added watches functionally verified via ausearch:
 
-\- cred\_read\_shadow fires on `sudo cat /etc/shadow`
+- cred\_read\_shadow fires on `sudo cat /etc/shadow`
 
-\- ssh\_authkeys fires on append to authorized\_keys
+- ssh\_authkeys fires on append to authorized\_keys
 
-\- log\_tampering fires on file creation, truncation, and deletion
+- log\_tampering fires on file creation, truncation, and deletion
 
 &#x20; inside /var/log
 
 
 
-\### Known Tradeoffs
+### Known Tradeoffs
 
-\- /etc/shadow read-watch generates substantial event volume from
+- /etc/shadow read-watch generates substantial event volume from
 
 &#x20; legitimate readers (PAM, sudo, sshd, systemd-logind). Filtering
 
@@ -156,7 +156,7 @@ All 6 added watches functionally verified via ausearch:
 
 &#x20; at the auditd layer. Documented in docs/TUNING\_LOG.md.
 
-\- chmod syscall rule from Neo23x0 has -F auid>=1000 filter, meaning
+- chmod syscall rule from Neo23x0 has -F auid>=1000 filter, meaning
 
 &#x20; SUID-set actions performed as true root (auid=0) will not be
 
