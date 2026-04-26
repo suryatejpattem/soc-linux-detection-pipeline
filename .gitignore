@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific exceptions: log files in data/ are evidence, not noise
+!data/**/*.log
