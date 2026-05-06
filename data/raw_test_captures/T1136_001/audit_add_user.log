@@ -1,0 +1,3 @@
+type=ADD_USER msg=audit(1778106754.185:13187): pid=6847 uid=0 auid=1000 ses=3 subj=unconfined msg='op=adding user id=995 exe="/usr/sbin/useradd" hostname=surya addr=? terminal=pts/5 res=success'UID="root" AUID="surya" ID="unknown(995)"
+type=EXECVE msg=audit(1778108414.145:14305): argc=4 a0="sudo" a1="grep" a2="ADD_USER" a3="/var/log/audit/audit.log"
+type=EXECVE msg=audit(1778108414.167:14326): argc=3 a0="grep" a1="ADD_USER" a2="/var/log/audit/audit.log"

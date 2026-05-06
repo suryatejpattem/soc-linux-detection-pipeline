@@ -1,0 +1,277 @@
+----
+time->Wed May  6 16:02:18 2026
+type=PROCTITLE msg=audit(1778097738.499:2047): proctitle=75736572616464002D64002F7661722F72756E2F76626F78616464002D670031002D72002D73002F62696E2F66616C73650076626F78616464
+type=PATH msg=audit(1778097738.499:2047): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=5114284 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778097738.499:2047): item=0 name="/usr/sbin/useradd" inode=5128531 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778097738.499:2047): cwd="/"
+type=EXECVE msg=audit(1778097738.499:2047): argc=9 a0="useradd" a1="-d" a2="/var/run/vboxadd" a3="-g" a4="1" a5="-r" a6="-s" a7="/bin/false" a8="vboxadd"
+type=SYSCALL msg=audit(1778097738.499:2047): arch=c000003e syscall=59 success=yes exit=0 a0=631188e93ed8 a1=631188e84af0 a2=631188e93e78 a3=8 items=2 ppid=982 pid=1679 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 16:02:18 2026
+type=PROCTITLE msg=audit(1778097738.523:2048): proctitle=75736572616464002D64002F7661722F72756E2F76626F78616464002D670031002D72002D73002F62696E2F66616C73650076626F78616464
+type=PATH msg=audit(1778097738.523:2048): item=0 name="/etc/passwd" inode=4066091 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778097738.523:2048): cwd="/"
+type=SYSCALL msg=audit(1778097738.523:2048): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=75944f7cf320 a2=80000 a3=0 items=1 ppid=982 pid=1679 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_passwd"
+----
+time->Wed May  6 16:02:18 2026
+type=ADD_USER msg=audit(1778097738.523:2049): pid=1679 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=adding user acct="vboxadd" exe="/usr/sbin/useradd" hostname=? addr=? terminal=? res=failed'
+----
+time->Wed May  6 16:02:18 2026
+type=ADD_USER msg=audit(1778097738.523:2050): pid=1679 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=adding user acct="vboxadd" exe="/usr/sbin/useradd" hostname=? addr=? terminal=? res=failed'
+----
+time->Wed May  6 16:02:18 2026
+type=PROCTITLE msg=audit(1778097738.524:2052): proctitle=75736572616464002D64002F7661722F72756E2F76626F78616464002D670031002D7500353031002D6F002D73002F62696E2F66616C73650076626F78616464
+type=PATH msg=audit(1778097738.524:2052): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=5114284 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778097738.524:2052): item=0 name="/usr/sbin/useradd" inode=5128531 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778097738.524:2052): cwd="/"
+type=EXECVE msg=audit(1778097738.524:2052): argc=11 a0="useradd" a1="-d" a2="/var/run/vboxadd" a3="-g" a4="1" a5="-u" a6="501" a7="-o" a8="-s" a9="/bin/false" a10="vboxadd"
+type=SYSCALL msg=audit(1778097738.524:2052): arch=c000003e syscall=59 success=yes exit=0 a0=631188e93ef8 a1=631188e84b20 a2=631188e93e98 a3=8 items=2 ppid=982 pid=1680 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 16:02:18 2026
+type=PROCTITLE msg=audit(1778097738.528:2053): proctitle=75736572616464002D64002F7661722F72756E2F76626F78616464002D670031002D7500353031002D6F002D73002F62696E2F66616C73650076626F78616464
+type=PATH msg=audit(1778097738.528:2053): item=0 name="/etc/passwd" inode=4066091 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778097738.528:2053): cwd="/"
+type=SYSCALL msg=audit(1778097738.528:2053): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=7a868f3cf320 a2=80000 a3=0 items=1 ppid=982 pid=1680 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_passwd"
+----
+time->Wed May  6 16:02:18 2026
+type=ADD_USER msg=audit(1778097738.528:2054): pid=1680 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=adding user acct="vboxadd" exe="/usr/sbin/useradd" hostname=? addr=? terminal=? res=failed'
+----
+time->Wed May  6 16:02:18 2026
+type=ADD_USER msg=audit(1778097738.528:2055): pid=1680 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=adding user acct="vboxadd" exe="/usr/sbin/useradd" hostname=? addr=? terminal=? res=failed'
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.112:13174): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.112:13174): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=5114284 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.112:13174): item=0 name="/usr/sbin/useradd" inode=5128531 dev=08:02 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.112:13174): cwd="/home/surya"
+type=EXECVE msg=audit(1778106754.112:13174): argc=9 a0="useradd" a1="-M" a2="-N" a3="-r" a4="-s" a5="/bin/bash" a6="-c" a7="system_backup" a8="backupsvc"
+type=SYSCALL msg=audit(1778106754.112:13174): arch=c000003e syscall=59 success=yes exit=0 a0=6316e5995928 a1=6316e59829b0 a2=6316e5997ed0 a3=64 items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.123:13175): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.123:13175): item=0 name="/etc/passwd" inode=4066091 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.123:13175): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.123:13175): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=704bbcbcf320 a2=80000 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_passwd"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.150:13176): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.150:13176): item=1 name="/etc/passwd.6847" inode=4063639 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.150:13176): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.150:13176): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.150:13176): arch=c000003e syscall=87 success=yes exit=0 a0=630e37786a80 a1=630e37786a80 a2=0 a3=0 items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.150:13177): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.150:13177): item=0 name="/etc/passwd" inode=4066091 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.150:13177): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.150:13177): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=630e08112040 a2=20902 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_passwd"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.154:13178): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.154:13178): item=1 name="/etc/group.6847" inode=4065408 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.154:13178): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.154:13178): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.154:13178): arch=c000003e syscall=87 success=yes exit=0 a0=630e3778d9f0 a1=630e3778d9f0 a2=0 a3=0 items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.154:13179): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.154:13179): item=0 name="/etc/group" inode=4066063 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.154:13179): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.154:13179): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=630e081124a0 a2=20902 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="etcgroup"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.161:13180): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.161:13180): item=1 name="/etc/gshadow.6847" inode=4065443 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.161:13180): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.161:13180): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.161:13180): arch=c000003e syscall=87 success=yes exit=0 a0=630e37787b40 a1=630e37787b40 a2=0 a3=0 items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.162:13181): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.162:13181): item=0 name="/etc/gshadow" inode=4064163 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.162:13181): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.162:13181): arch=c000003e syscall=257 success=yes exit=7 a0=ffffff9c a1=630e08112900 a2=20902 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_gshadow"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.164:13182): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.164:13182): item=0 name="/etc/passwd" inode=4066091 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.164:13182): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.164:13182): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=704bbcbcf320 a2=80000 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_passwd"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.173:13183): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.173:13183): item=1 name="/etc/shadow.6847" inode=4065882 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.173:13183): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.173:13183): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.173:13183): arch=c000003e syscall=87 success=yes exit=0 a0=630e3779b220 a1=630e3779b220 a2=0 a3=0 items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.173:13184): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.173:13184): item=0 name="/etc/shadow" inode=4066066 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.173:13184): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.173:13184): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=630e08111be0 a2=20902 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_shadow"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.173:13185): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.173:13185): item=0 name="/etc/passwd" inode=4066091 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.173:13185): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.173:13185): arch=c000003e syscall=257 success=yes exit=10 a0=ffffff9c a1=704bbcbcf320 a2=80000 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_passwd"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.175:13186): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.175:13186): item=0 name="/var/log/lastlog" inode=3812977 dev=08:02 mode=0100664 ouid=0 ogid=43 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.175:13186): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.175:13186): arch=c000003e syscall=257 success=yes exit=10 a0=ffffff9c a1=630e0810ba54 a2=2 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="log_tampering"
+----
+time->Wed May  6 18:32:34 2026
+type=ADD_USER msg=audit(1778106754.185:13187): pid=6847 uid=0 auid=1000 ses=3 subj=unconfined msg='op=adding user id=995 exe="/usr/sbin/useradd" hostname=surya addr=? terminal=pts/5 res=success'
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.187:13188): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.187:13188): item=0 name=(null) inode=4066024 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.187:13188): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.187:13188): arch=c000003e syscall=93 success=yes exit=0 a0=a a1=0 a2=0 a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.187:13189): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.187:13189): item=0 name=(null) inode=4066024 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.187:13189): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.187:13189): arch=c000003e syscall=91 success=yes exit=0 a0=a a1=1a4 a2=0 a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.191:13190): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.191:13190): item=0 name="/etc/passwd-" inode=4066024 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.191:13190): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.191:13190): arch=c000003e syscall=280 success=yes exit=0 a0=ffffff9c a1=7ffd5f9e89a0 a2=7ffd5f9e8820 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="T1070_006_timestomp"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.192:13191): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.192:13191): item=0 name=(null) inode=4066127 dev=08:02 mode=0100000 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.192:13191): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.192:13191): arch=c000003e syscall=93 success=yes exit=0 a0=5 a1=0 a2=0 a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.192:13192): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.192:13192): item=0 name=(null) inode=4066127 dev=08:02 mode=0100000 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.192:13192): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.192:13192): arch=c000003e syscall=91 success=yes exit=0 a0=5 a1=1a4 a2=0 a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.196:13193): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.196:13193): item=4 name="/etc/passwd" inode=4066127 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.196:13193): item=3 name="/etc/passwd" inode=4066091 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.196:13193): item=2 name="/etc/passwd+" inode=4066127 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.196:13193): item=1 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.196:13193): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.196:13193): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.196:13193): arch=c000003e syscall=82 success=yes exit=0 a0=7ffd5f9e89a0 a1=630e08112040 a2=7ffd5f9e8910 a3=100 items=5 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="etcpasswd"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.196:13194): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.196:13194): item=0 name=(null) inode=4063657 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.196:13194): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.196:13194): arch=c000003e syscall=93 success=yes exit=0 a0=5 a1=0 a2=2a a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.196:13195): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.196:13195): item=0 name=(null) inode=4063657 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.196:13195): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.196:13195): arch=c000003e syscall=91 success=yes exit=0 a0=5 a1=1a0 a2=2a a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.202:13196): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.202:13196): item=0 name="/etc/shadow-" inode=4063657 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.202:13196): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.202:13196): arch=c000003e syscall=280 success=yes exit=0 a0=ffffff9c a1=7ffd5f9e89a0 a2=7ffd5f9e8820 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="T1070_006_timestomp"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.203:13197): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.203:13197): item=0 name=(null) inode=4066091 dev=08:02 mode=0100000 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.203:13197): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.203:13197): arch=c000003e syscall=93 success=yes exit=0 a0=5 a1=0 a2=2a a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.203:13198): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.203:13198): item=0 name=(null) inode=4066091 dev=08:02 mode=0100000 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.203:13198): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.203:13198): arch=c000003e syscall=91 success=yes exit=0 a0=5 a1=1a0 a2=2a a3=1b6 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="perm_mod"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.208:13199): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.208:13199): item=4 name="/etc/shadow" inode=4066091 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.208:13199): item=3 name="/etc/shadow" inode=4066066 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.208:13199): item=2 name="/etc/shadow+" inode=4066091 dev=08:02 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.208:13199): item=1 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.208:13199): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.208:13199): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.208:13199): arch=c000003e syscall=82 success=yes exit=0 a0=7ffd5f9e89a0 a1=630e08111be0 a2=7ffd5f9e8910 a3=100 items=5 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="etcpasswd"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.209:13200): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.209:13200): item=1 name="/etc/shadow.lock" inode=4065882 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.209:13200): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.209:13200): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.209:13200): arch=c000003e syscall=87 success=yes exit=0 a0=7ffd5f9e89c0 a1=6b636f6c a2=0 a3=ffffffff items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.209:13201): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.209:13201): item=1 name="/etc/passwd.lock" inode=4063639 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.209:13201): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.209:13201): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.209:13201): arch=c000003e syscall=87 success=yes exit=0 a0=7ffd5f9e89c0 a1=6b636f6c a2=0 a3=ffffffff items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.209:13202): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.209:13202): item=1 name="/etc/group.lock" inode=4065408 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.209:13202): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.209:13202): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.209:13202): arch=c000003e syscall=87 success=yes exit=0 a0=7ffd5f9e89a0 a1=6b636f6c a2=0 a3=ffffffff items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.209:13203): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.209:13203): item=1 name="/etc/gshadow.lock" inode=4065443 dev=08:02 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1778106754.209:13203): item=0 name="/etc/" inode=4063233 dev=08:02 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.209:13203): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.209:13203): arch=c000003e syscall=87 success=yes exit=0 a0=7ffd5f9e89a0 a1=6b636f6c a2=0 a3=ffffffff items=2 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="delete"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.212:13204): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.212:13204): item=0 name="/usr/sbin/nscd" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.212:13204): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.212:13204): arch=c000003e syscall=59 success=no exit=-2 a0=630e0810c73e a1=7ffd5f9e8940 a2=7ffd5f9e8938 a3=704bbceba0b8 items=1 ppid=6847 pid=6848 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.213:13205): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.213:13205): item=0 name="/usr/sbin/nscd" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.213:13205): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.213:13205): arch=c000003e syscall=59 success=no exit=-2 a0=630e0810c73e a1=7ffd5f9e8940 a2=7ffd5f9e8938 a3=704bbceba0b8 items=1 ppid=6847 pid=6849 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.214:13206): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.214:13206): item=0 name="/usr/sbin/sss_cache" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.214:13206): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.214:13206): arch=c000003e syscall=59 success=no exit=-2 a0=630e0810c6e1 a1=7ffd5f9e8950 a2=7ffd5f9e8948 a3=704bbceba0b8 items=1 ppid=6847 pid=6850 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.216:13207): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.216:13207): item=0 name="/usr/sbin/nscd" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.216:13207): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.216:13207): arch=c000003e syscall=59 success=no exit=-2 a0=630e0810c73e a1=7ffd5f9e8dd0 a2=7ffd5f9e8dc8 a3=704bbceba0b8 items=1 ppid=6847 pid=6851 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.216:13208): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.216:13208): item=0 name="/usr/sbin/nscd" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.216:13208): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.216:13208): arch=c000003e syscall=59 success=no exit=-2 a0=630e0810c73e a1=7ffd5f9e8dd0 a2=7ffd5f9e8dc8 a3=704bbceba0b8 items=1 ppid=6847 pid=6852 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.217:13209): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.217:13209): item=0 name="/usr/sbin/sss_cache" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.217:13209): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.217:13209): arch=c000003e syscall=59 success=no exit=-2 a0=630e0810c6e1 a1=7ffd5f9e8de0 a2=7ffd5f9e8dd8 a3=704bbceba0b8 items=1 ppid=6847 pid=6853 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="process_creation"
+----
+time->Wed May  6 18:32:34 2026
+type=PROCTITLE msg=audit(1778106754.220:13210): proctitle=75736572616464002D4D002D4E002D72002D73002F62696E2F62617368002D630073797374656D5F6261636B7570006261636B7570737663
+type=PATH msg=audit(1778106754.220:13210): item=0 name="/etc/passwd" inode=4066127 dev=08:02 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1778106754.220:13210): cwd="/home/surya"
+type=SYSCALL msg=audit(1778106754.220:13210): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=704bbcbcf320 a2=80000 a3=0 items=1 ppid=6846 pid=6847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=3 comm="useradd" exe="/usr/sbin/useradd" subj=unconfined key="cred_read_passwd"

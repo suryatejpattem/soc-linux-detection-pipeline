@@ -1,0 +1,4 @@
+2026-05-06T16:02:18.525307-04:00 surya useradd[1679]: failed adding user 'vboxadd', exit code: 9
+2026-05-06T16:02:18.530810-04:00 surya useradd[1680]: failed adding user 'vboxadd', exit code: 9
+2026-05-06T18:32:34.101646-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/useradd -M -N -r -s /bin/bash -c system_backup backupsvc
+2026-05-06T18:32:34.175696-04:00 surya useradd[6847]: new user: name=backupsvc, UID=995, GID=100, home=/home/backupsvc, shell=/bin/bash, from=/dev/pts/5

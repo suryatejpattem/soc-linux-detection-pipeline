@@ -1,0 +1,17 @@
+2026-05-06T18:15:01.227129-04:00 surya CRON[6644]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:18:27.203235-04:00 surya CRON[6650]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:18:27.216257-04:00 surya CRON[6650]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:25:01.320487-04:00 surya CRON[6696]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:25:01.375506-04:00 surya CRON[6696]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:28:01.358082-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-05-06T18:30:02.319602-04:00 surya CRON[6814]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:30:02.339759-04:00 surya CRON[6814]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:31:49.049243-04:00 surya sudo:    surya : TTY=pts/1 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+2026-05-06T18:31:49.055959-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T18:31:59.525370-04:00 surya sudo: pam_unix(sudo:auth): authentication failure; logname=surya uid=1000 euid=0 tty=/dev/pts/2 ruser=surya rhost=  user=surya
+2026-05-06T18:32:07.572865-04:00 surya sudo:    surya : TTY=pts/2 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/audit/audit.log
+2026-05-06T18:32:07.573933-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T18:32:34.101646-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/useradd -M -N -r -s /bin/bash -c system_backup backupsvc
+2026-05-06T18:32:34.111282-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T18:32:34.175696-04:00 surya useradd[6847]: new user: name=backupsvc, UID=995, GID=100, home=/home/backupsvc, shell=/bin/bash, from=/dev/pts/5
+2026-05-06T18:32:34.225136-04:00 surya sudo: pam_unix(sudo:session): session closed for user root

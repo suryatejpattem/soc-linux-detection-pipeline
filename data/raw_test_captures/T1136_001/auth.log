@@ -1,0 +1,81 @@
+2026-05-06T16:02:18.525307-04:00 surya useradd[1679]: failed adding user 'vboxadd', exit code: 9
+2026-05-06T16:02:18.530810-04:00 surya useradd[1680]: failed adding user 'vboxadd', exit code: 9
+2026-05-06T16:02:20.569857-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-05-06T16:02:20.623769-04:00 surya systemd-logind[980]: New session c1 of user gdm.
+2026-05-06T16:02:20.680277-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-05-06T16:02:26.114813-04:00 surya polkitd[970]: Registered Authentication Agent for unix-session:c1 (system bus name :1.38 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-05-06T16:02:34.407057-04:00 surya gdm-password]: gkr-pam: unable to locate daemon control file
+2026-05-06T16:02:34.407343-04:00 surya gdm-password]: gkr-pam: stashed password to try later in open session
+2026-05-06T16:02:34.444381-04:00 surya gdm-password]: pam_unix(gdm-password:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-05-06T16:02:34.473888-04:00 surya systemd-logind[980]: New session 2 of user surya.
+2026-05-06T16:02:34.514421-04:00 surya (systemd): pam_unix(systemd-user:session): session opened for user surya(uid=1000) by surya(uid=0)
+2026-05-06T16:02:35.005484-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-05-06T16:02:35.717881-04:00 surya gnome-keyring-daemon[3030]: The PKCS#11 component was already initialized
+2026-05-06T16:02:35.718945-04:00 surya gnome-keyring-daemon[3238]: discover_other_daemon: 1
+2026-05-06T16:02:35.726150-04:00 surya gnome-keyring-daemon[3030]: The Secret Service was already initialized
+2026-05-06T16:02:35.726587-04:00 surya gnome-keyring-daemon[3240]: discover_other_daemon: 1
+2026-05-06T16:02:35.748314-04:00 surya gnome-keyring-daemon[3249]: discover_other_daemon: 1
+2026-05-06T16:02:38.161077-04:00 surya polkitd[970]: Registered Authentication Agent for unix-session:2 (system bus name :1.75 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-05-06T16:02:39.215265-04:00 surya gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-05-06T16:02:39.257760-04:00 surya systemd-logind[980]: Session c1 logged out. Waiting for processes to exit.
+2026-05-06T16:02:39.289853-04:00 surya systemd-logind[980]: Removed session c1.
+2026-05-06T16:02:39.310335-04:00 surya polkitd[970]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.38, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-05-06T16:03:41.249335-04:00 surya pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T16:03:41.252400-04:00 surya pkexec[4584]: surya: Executing command [USER=root] [TTY=unknown] [CWD=/home/surya] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-05-06T16:05:01.415326-04:00 surya CRON[4715]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:05:01.422715-04:00 surya CRON[4715]: pam_unix(cron:session): session closed for user root
+2026-05-06T16:15:01.073328-04:00 surya CRON[4802]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:15:01.086333-04:00 surya CRON[4802]: pam_unix(cron:session): session closed for user root
+2026-05-06T16:17:01.652626-04:00 surya CRON[4805]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:17:01.667106-04:00 surya CRON[4805]: pam_unix(cron:session): session closed for user root
+2026-05-06T16:25:02.583542-04:00 surya CRON[4833]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:25:02.610246-04:00 surya CRON[4833]: pam_unix(cron:session): session closed for user root
+2026-05-06T16:30:01.666442-04:00 surya CRON[4837]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:30:01.693377-04:00 surya CRON[4837]: pam_unix(cron:session): session closed for user root
+2026-05-06T16:34:42.163266-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-05-06T16:35:01.714524-04:00 surya CRON[4969]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:35:01.734181-04:00 surya CRON[4969]: pam_unix(cron:session): session closed for user root
+2026-05-06T16:45:01.832023-04:00 surya CRON[5019]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:45:01.884299-04:00 surya CRON[5019]: pam_unix(cron:session): session closed for user root
+2026-05-06T16:53:47.396579-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-05-06T16:53:52.457971-04:00 surya dbus-daemon[943]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2026-05-06T16:55:01.926641-04:00 surya CRON[5298]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T16:55:01.941097-04:00 surya CRON[5298]: pam_unix(cron:session): session closed for user root
+2026-05-06T17:33:54.278764-04:00 surya CRON[5303]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T17:33:54.279565-04:00 surya CRON[5303]: pam_unix(cron:session): session closed for user root
+2026-05-06T17:35:01.811336-04:00 surya CRON[5377]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T17:35:01.840013-04:00 surya CRON[5377]: pam_unix(cron:session): session closed for user root
+2026-05-06T17:45:01.388775-04:00 surya CRON[5394]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T17:45:01.428534-04:00 surya CRON[5394]: pam_unix(cron:session): session closed for user root
+2026-05-06T17:54:14.783661-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-05-06T17:55:01.874079-04:00 surya CRON[5514]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T17:55:01.882893-04:00 surya CRON[5514]: pam_unix(cron:session): session closed for user root
+2026-05-06T17:59:16.999237-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/systemctl status auditd
+2026-05-06T17:59:17.031071-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T17:59:17.052256-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-05-06T18:01:30.127558-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/auditctl -l
+2026-05-06T18:01:30.135324-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T18:01:30.151746-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-05-06T18:05:01.432220-04:00 surya CRON[6618]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:05:01.469844-04:00 surya CRON[6618]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:15:01.203397-04:00 surya CRON[6644]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:15:01.227129-04:00 surya CRON[6644]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:18:27.203235-04:00 surya CRON[6650]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:18:27.216257-04:00 surya CRON[6650]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:25:01.320487-04:00 surya CRON[6696]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:25:01.375506-04:00 surya CRON[6696]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:28:01.358082-04:00 surya gdm-password]: gkr-pam: unlocked login keyring
+2026-05-06T18:30:02.319602-04:00 surya CRON[6814]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-05-06T18:30:02.339759-04:00 surya CRON[6814]: pam_unix(cron:session): session closed for user root
+2026-05-06T18:31:49.049243-04:00 surya sudo:    surya : TTY=pts/1 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+2026-05-06T18:31:49.055959-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T18:31:59.525370-04:00 surya sudo: pam_unix(sudo:auth): authentication failure; logname=surya uid=1000 euid=0 tty=/dev/pts/2 ruser=surya rhost=  user=surya
+2026-05-06T18:32:07.572865-04:00 surya sudo:    surya : TTY=pts/2 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/audit/audit.log
+2026-05-06T18:32:07.573933-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T18:32:34.101646-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/sbin/useradd -M -N -r -s /bin/bash -c system_backup backupsvc
+2026-05-06T18:32:34.111282-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
+2026-05-06T18:32:34.175696-04:00 surya useradd[6847]: new user: name=backupsvc, UID=995, GID=100, home=/home/backupsvc, shell=/bin/bash, from=/dev/pts/5
+2026-05-06T18:32:34.225136-04:00 surya sudo: pam_unix(sudo:session): session closed for user root
+2026-05-06T18:32:54.657572-04:00 surya sudo: message repeated 2 times: [ pam_unix(sudo:session): session closed for user root]
+2026-05-06T18:33:26.935194-04:00 surya sudo:    surya : TTY=pts/0 ; PWD=/home/surya ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /home/surya/t1136_001/auth.log
+2026-05-06T18:33:26.943677-04:00 surya sudo: pam_unix(sudo:session): session opened for user root(uid=0) by surya(uid=1000)
